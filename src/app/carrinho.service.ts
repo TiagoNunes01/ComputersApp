@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IProdutoCarrinho } from './produtos/produtos';
+import { IProdutoCarrinho } from './produtos';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,8 @@ export class CarrinhoService {
   constructor() { }
 
   obtemCarrinho() {
-    return JSON.parse(localStorage.getItem("carrinho") || "");
+    this.itens = JSON.parse(localStorage.getItem("carrinho") || "");
+    return this.itens;
   }
 
   adicionarAoCarrinho(produto: IProdutoCarrinho) {

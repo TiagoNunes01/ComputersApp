@@ -17,12 +17,14 @@
     color: var(--blue);
     color: blue;
     font-size:60px;
+    cursor: pointer;
 }
 
 .main-header__title--orange {
     color: var(--orange);
     color: orange;
     font-size:60px;
+    cursor: pointer;
 }
 
 .main-header__menu ul {
@@ -42,6 +44,7 @@
 .main-header__menu a:hover {
     background-color: var(--blue);
     color: #fff;
+    cursor: pointer;
 }
 
 .container-menu {
